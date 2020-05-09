@@ -1,6 +1,5 @@
 body {
-
-
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     color: blue;
@@ -11,4 +10,12 @@ h6 {
 p {
     color: darkred;
     font-size: 32px;
+}
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+    margin: 0px;
+}
+th {
+    background-color: bisque;
 }
