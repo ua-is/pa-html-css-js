@@ -16,6 +16,10 @@ table, th, td {
     padding: 5px;
     margin: 0px;
 }
+table {
+    height: 400px;
+    width: 500px;
+}
 th {
     background-color: bisque;
 }
