@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Eventos en Javascript</title>
+    <script src="js/metodos.js"></script>
+    <script src="js/arreglos.js"></script>
 </head>
-<body>
+<body> <!-- document -->
     <h1>Eventos</h1>
+    <form action="#" method="post">
+        <input type="text" name="txtTexto" onchange="cambio()">
+        <select name="selMeses" onchange="cambio()">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+        </select>
+        <button name="btnCalcular" onclick="saludar()" onfocus="enfocado()">Calcular</button>
+        <button name="btnClose" onclick="cerrar()">Cerrar</button>
+        <button type="button" name="btnConfirmar" onclick="confirmar()">Confirmar</button>
+        <button type="button" name="btnSolicita" onclick="solicitaData()">Solicita Data</button>
+    </form>
+    <br><br><br>
+
+    <form id="frmSuma" name="frmSuma" action="#" method="post">
+        <label for="txtnum1">numero 1: </label>
+        <input type="number" id="txtnum1" name="txtnum1"> <br><br>
+        <label for="txtnum2">numero 2: </label>
+        <input type="number" id="txtnum2" name="txtnum2"> <br><br>
+        <label for="txtnum2">Resultado: </label>
+        <input type="number" id="txtresultado" name="txtresultado"> <br><br>
+        <button type="button" name="btncalcularsuma" onclick="calcularSuma()">Calcular Suma</button>
+    </form>
+
 
 
 </body>
